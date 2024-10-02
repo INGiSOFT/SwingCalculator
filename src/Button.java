@@ -10,7 +10,9 @@ public class Button extends JButton {
         // setText(text);
 
         setSize(20, 20);
+        setFont(new Font("Sans Serif", Font.BOLD, 16));
         setBackground(Color.BLACK);
         setForeground(Color.WHITE);
+        setFocusable(false);
     }
 }
