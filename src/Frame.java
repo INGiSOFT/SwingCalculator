@@ -1,14 +1,18 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Frame extends JFrame {
 
     private JPanel displayPanel = new JPanel();
     private JPanel buttonPanel = new JPanel();
 
+    private ActionListener buttonActionListener = new ButtonListener();
+
     public Frame() {
 
-        setVisible(true);
+
         setTitle("Calculator");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(400, 300);
@@ -23,15 +27,35 @@ public class Frame extends JFrame {
         Button buttonDivide = new Button("/");
 
         Button button0 = new Button("0");
+        button0.addActionListener(buttonActionListener);
+
         Button button1 = new Button("1");
+        button1.addActionListener(buttonActionListener);
+
         Button button2 = new Button("2");
+        button2.addActionListener(buttonActionListener);
+
         Button button3 = new Button("3");
+        button3.addActionListener(buttonActionListener);
+
         Button button4 = new Button("4");
+        button4.addActionListener(buttonActionListener);
+
         Button button5 = new Button("5");
+        button5.addActionListener(buttonActionListener);
+
         Button button6 = new Button("6");
+        button6.addActionListener(buttonActionListener);
+
         Button button7 = new Button("7");
+        button7.addActionListener(buttonActionListener);
+
         Button button8 = new Button("8");
+        button8.addActionListener(buttonActionListener);
+
         Button button9 = new Button("9");
+        button9.addActionListener(buttonActionListener);
+
         Button buttonDot = new Button(".");
         JButton buttonEqual = new Button("=");
         buttonEqual.setBackground(Color.BLUE);
@@ -59,5 +83,6 @@ public class Frame extends JFrame {
         add(displayPanel, BorderLayout.NORTH);
         add(buttonPanel, BorderLayout.SOUTH);
 
+        setVisible(true);
     }
 }
