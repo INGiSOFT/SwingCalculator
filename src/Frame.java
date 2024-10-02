@@ -9,7 +9,7 @@ public class Frame extends JFrame {
 
     private ActionListener buttonListener = new ButtonListener();
 
-    private final Button[] numberButtons = new Button[10];
+    private final JButton[] numberButtons = new JButton[10];
 
     public Frame() {
 
@@ -33,7 +33,7 @@ public class Frame extends JFrame {
             buttonPanel.add(numberButtons[i]);
         }
 
-        Button buttonDot = new Button(".");
+        JButton buttonDot = new Button(".");
         JButton buttonEqual = new Button("=");
         buttonEqual.setBackground(Color.BLUE);
 
