@@ -39,7 +39,7 @@ public class Frame extends JFrame {
         buttonEqual.setBackground(Color.BLUE);
         buttonEqual.setForeground(Color.WHITE);
 
-        buttonPanel.setLayout(new GridLayout(5,4));
+        buttonPanel.setLayout(new GridLayout(4,4));
 
         buttonPanel.add(button0);
         buttonPanel.add(button1);
