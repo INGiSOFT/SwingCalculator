@@ -34,7 +34,10 @@ public class Frame extends JFrame {
         Button button9 = new Button("9");
         Button buttonDot = new Button(".");
         JButton buttonEqual = new Button("=");
-        buttonEqual.setForeground(Color.RED);
+
+        // Weird ...
+        buttonEqual.setBackground(Color.BLUE);
+        buttonEqual.setForeground(Color.WHITE);
 
         buttonPanel.setLayout(new GridLayout(5,4));
 
