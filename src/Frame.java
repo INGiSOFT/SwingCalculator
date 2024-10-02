@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Frame extends JFrame {
@@ -8,10 +7,9 @@ public class Frame extends JFrame {
     private JPanel displayPanel = new JPanel();
     private JPanel buttonPanel = new JPanel();
 
-    private ActionListener buttonActionListener = new ButtonListener();
+    private ActionListener buttonListener = new ButtonListener();
 
     public Frame() {
-
 
         setTitle("Calculator");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -27,34 +25,34 @@ public class Frame extends JFrame {
         Button buttonDivide = new Button("/");
 
         Button button0 = new Button("0");
-        button0.addActionListener(buttonActionListener);
+        button0.addActionListener(buttonListener);
 
         Button button1 = new Button("1");
-        button1.addActionListener(buttonActionListener);
+        button1.addActionListener(buttonListener);
 
         Button button2 = new Button("2");
-        button2.addActionListener(buttonActionListener);
+        button2.addActionListener(buttonListener);
 
         Button button3 = new Button("3");
-        button3.addActionListener(buttonActionListener);
+        button3.addActionListener(buttonListener);
 
         Button button4 = new Button("4");
-        button4.addActionListener(buttonActionListener);
+        button4.addActionListener(buttonListener);
 
         Button button5 = new Button("5");
-        button5.addActionListener(buttonActionListener);
+        button5.addActionListener(buttonListener);
 
         Button button6 = new Button("6");
-        button6.addActionListener(buttonActionListener);
+        button6.addActionListener(buttonListener);
 
         Button button7 = new Button("7");
-        button7.addActionListener(buttonActionListener);
+        button7.addActionListener(buttonListener);
 
         Button button8 = new Button("8");
-        button8.addActionListener(buttonActionListener);
+        button8.addActionListener(buttonListener);
 
         Button button9 = new Button("9");
-        button9.addActionListener(buttonActionListener);
+        button9.addActionListener(buttonListener);
 
         Button buttonDot = new Button(".");
         JButton buttonEqual = new Button("=");
